@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AndroidStudioProjects.iml" filepath="$PROJECT_DIR$/../AndroidStudioProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaplaPreviewWidget/RaplaPreviewWidget.iml" filepath="$PROJECT_DIR$/RaplaPreviewWidget/RaplaPreviewWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaplaPreviewWidgetProject.iml" filepath="$PROJECT_DIR$/RaplaPreviewWidgetProject.iml" />
+    </modules>
+  </component>
+</project>
+

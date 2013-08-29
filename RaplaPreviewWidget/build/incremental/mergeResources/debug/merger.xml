@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res" >
+            <file
+                name="widget_bg_normal"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\drawable\widget_bg_normal.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\drawable-ldpi\ic_launcher.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="main"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="widget_text" >xda-developers
+                </string>
+                <string name="app_name" >RaplaPreviewWidget
+                </string>
+            </file>
+            <file
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                name="my_widget_provider"
+                path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\main\res\xml\my_widget_provider.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\build\res\rs\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\ZEUS\Dropbox\Eigene EDV\Android\AndroidStudioProjects\RaplaPreviewWidgetProject\RaplaPreviewWidget\src\debug\res" />
+    </dataSet>
+
+</merger>
