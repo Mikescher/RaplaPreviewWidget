@@ -21,7 +21,7 @@ public class RaplaPreviewWidget extends AppWidgetProvider {
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new MyTime(context, appWidgetManager), 1, 1000);
+        timer.scheduleAtFixedRate(new MyTime(context, appWidgetManager), 1, 20*1000);
     }
 
     private class MyTime extends TimerTask {
@@ -40,7 +40,13 @@ public class RaplaPreviewWidget extends AppWidgetProvider {
         public void run() {
             remoteViews.setTextViewText(R.id.widget_textview, "TIME = " +format.format(new Date()));
             appWidgetManager.updateAppWidget(thisWidget, remoteViews);
-            System.out.println("UPDATE WIDGET");
+
+            System.out.println("UPDATE WIDGET START");
+
+            RaplaConnector conn = new RaplaConnector();
+            conn.update();
+
+            System.out.println("UPDATE WIDGET END");
         }
 
     }
