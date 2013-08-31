@@ -16,6 +16,7 @@ public class RaplaEntry {
 
     private List<String> rooms;
     private List<String> courses;
+    private List<String> teacher;
 
     public RaplaEntry() {
         title = "";
@@ -43,6 +44,7 @@ public class RaplaEntry {
         this.courses = classes;
         this.rooms = rooms;
 
+//        this.teacher =
 //        this.startTime =
 //        this.endTime =
 
@@ -171,5 +173,9 @@ public class RaplaEntry {
 
     public List<String> getCourses() {
         return courses;
+    }
+
+    public List<String> getTeacher() {
+        return teacher;
     }
 }

@@ -38,7 +38,7 @@ public class RaplaPreviewWidget extends AppWidgetProvider {
 
         @Override
         public void run() {
-            remoteViews.setTextViewText(R.id.widget_textview, "TIME = " +format.format(new Date()));
+            remoteViews.setTextViewText(R.id.textViewMain, "TIME = " +format.format(new Date()));
             appWidgetManager.updateAppWidget(thisWidget, remoteViews);
 
             System.out.println("UPDATE WIDGET START");

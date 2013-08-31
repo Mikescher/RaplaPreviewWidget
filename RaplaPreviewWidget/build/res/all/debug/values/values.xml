@@ -3,7 +3,11 @@
 
     <!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/strings.xml -->
     <string name="app_name">RaplaPreviewWidget</string>
-    <string name="widget_text">xda-developers</string>
+    <string name="textViewDate_standard">04.08.2012</string>
+    <string name="textViewMain_standard">Mathematik II</string>
+    <string name="textViewSubtext_standard">F180.2 Hörsaal Technik/INF</string>
+    <string name="textViewTime_standard">08:40 - 09:12</string>
+    <string name="textViewWeekday_standard">Do (44 days)</string>
     <!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme">
         <!--
@@ -13,8 +17,21 @@
         -->
     </style>
 
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="RaVi_LabelTheme" parent="AppBaseTheme">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RaVi_MainLabelTheme" parent="RaVi_LabelTheme">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="RaVi_SideLabelTheme" parent="RaVi_LabelTheme">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="RaVi_SubLabelTheme" parent="RaVi_LabelTheme">
+        <item name="android:textSize">10dp</item>
     </style>
 
 </resources>
