@@ -15,7 +15,6 @@ public class RaplaConnector implements ResultListener {
 
     private final static int ENTRY_SEARCH_RANGE = 10; // show Course even if it started x minutes before
 
-    private final static boolean SKIP_WEEKEND = true;
     private final static int MAX_TRY_COUNT = 4;
     private final static int MAX_FORWARD_COUNT = 16;
 
@@ -40,24 +39,28 @@ public class RaplaConnector implements ResultListener {
     }
 
     public void recieve(String html) {
-        List<RaplaEntry> entries = getEntries(html, (Calendar) currentDate.clone());
-        if (entries == null) {
+        List<RaplaEntry> entries = null;
+        try {
+            entries = getEntries(html, (Calendar) currentDate.clone());
+        } catch (HTMLParseException e) {
+            e.printStackTrace();
             listener.recieveFailed("Could not parse HTML", this);
-        } else {
-            RaplaEntry nextEntry = getFirstEntry(entries);
-            if (nextEntry != null) {
-                listener.recieve(nextEntry, this);
-            } else {
-                currentDate.add(Calendar.DAY_OF_MONTH, 7);
-                currentForwardCount++;
-                currentTryCount = 0;
+            return;
+        }
 
-                if (currentForwardCount > MAX_FORWARD_COUNT) {
-                    listener.recieveFailed("Max seeking range, no Entrys found", this);
-                } else {
-                    System.out.println("SEEK NR " + currentForwardCount);
-                    update();
-                }
+        RaplaEntry nextEntry = getFirstEntry(entries);
+        if (nextEntry != null) {
+            listener.recieve(nextEntry, this);
+        } else {
+            currentDate.add(Calendar.DAY_OF_MONTH, 7);
+            currentForwardCount++;
+            currentTryCount = 0;
+
+            if (currentForwardCount > MAX_FORWARD_COUNT) {
+                listener.recieveFailed("Max seeking range, no Entrys found", this);
+            } else {
+                System.out.println("SEEK NR " + currentForwardCount);
+                update();
             }
         }
     }
@@ -99,7 +102,7 @@ public class RaplaConnector implements ResultListener {
         }
     }
 
-    private List<RaplaEntry> getEntries(String html, Calendar date) {
+    private List<RaplaEntry> getEntries(String html, Calendar date) throws HTMLParseException {
         List<RaplaEntry> result = new ArrayList<RaplaEntry>();
         html = RegexHelper.breakAndTrimText(html);
 
@@ -110,7 +113,7 @@ public class RaplaConnector implements ResultListener {
             int end = getClosingTag(html, matcher.end());
 
             if (start >= end) {
-                return null;
+                throw new HTMLParseException(String.format("Could not find weekday-Block: start(%d) is greater trhat end(%d)", start, end));
             } else {
                 String block = html.substring(start, end);
 
@@ -118,8 +121,6 @@ public class RaplaConnector implements ResultListener {
 
                 if (entry.parse(block, date)) {
                     result.add(entry);
-                } else {
-                    return null;
                 }
             }
         }

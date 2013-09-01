@@ -43,7 +43,6 @@ public class RaplaUtilies {
 
     public static Calendar getNow() {
         Calendar c = Calendar.getInstance();
-        c.set(2013, 9-1, 30, 0, 0, 0); //TODO Rem
         return c;
     }
 }

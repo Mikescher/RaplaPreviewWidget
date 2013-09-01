@@ -33,19 +33,19 @@ public class RaplaEntry {
         courses = new ArrayList<String>();
     }
 
-    public boolean parse(String code, Calendar date) {
+    public boolean parse(String code, Calendar date) throws HTMLParseException{
         String plain = removeTooltip(code);
         String tooltip = getTooltip(code);
-        if (tooltip == null) return false;
+        if (tooltip == null) throw new HTMLParseException("ould not parse tooltip");
 
         String time_full = getFullTime(tooltip);
-        if (time_full == null) return false;
+        if (time_full == null) throw new HTMLParseException("ould not parse time(1)");
         String time = getSmallTime(time_full);
-        if (time == null) return false;
+        if (time == null) throw new HTMLParseException("ould not parse time(2)");
         String time0 = getTimeDirect(time, 0);
-        if (time0 == null) return false;
+        if (time0 == null) throw new HTMLParseException("ould not parse time(3)");
         String time1 = getTimeDirect(time, 1);
-        if (time1 == null) return false;
+        if (time1 == null) throw new HTMLParseException("ould not parse time(4)");
 
         int time0_h;
         int time0_m;
@@ -57,16 +57,16 @@ public class RaplaEntry {
             time1_h = Integer.parseInt(time1.split(":")[0]);
             time1_m = Integer.parseInt(time1.split(":")[1]);
         } catch (Exception e) {
-            return false;
+            throw new HTMLParseException("ould not parse time(5)");
         }
 
         int weekday = getWeekday(time_full);
         if (weekday < 0) {
-            weekday = 0; //TODO get wd info woanders her
+            return false;
         }
 
         String title = getTitle(plain);
-        if (title == null) return false;
+        if (title == null) throw new HTMLParseException("ould not parse title");
 
         List<String> person = getPerson(plain);
         List<String> classes = getCourseResources(plain);

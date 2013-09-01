@@ -10,7 +10,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RemoteViews;
 
-public class RaplaPreviewWidgetProvider extends AppWidgetProvider { //TODO Log
+import java.text.SimpleDateFormat;
+
+public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
 
     public static RaplaEntry currentEntry = null;
     public static int currentSubTextMode = 0;
@@ -41,6 +43,8 @@ public class RaplaPreviewWidgetProvider extends AppWidgetProvider { //TODO Log
     }
 
     public static void startUpdate(Context c) {
+        System.out.print(RaplaUtilies.getNow().toString() + ": Start Widget Update");
+
         RaplaConnector conn = new RaplaConnector(new RaplaConnectorResultHandler(), c);
 
         RemoteViews rv = new RemoteViews(c.getPackageName(), R.layout.main);
