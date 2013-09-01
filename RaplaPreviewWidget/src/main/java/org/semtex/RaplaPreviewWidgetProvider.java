@@ -16,12 +16,14 @@ public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
 
     public static RaplaEntry currentEntry = null;
     public static int currentSubTextMode = 0;
+    public static boolean canReload = true;
 
     @Override
     public void onUpdate(Context c, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        System.out.println(RaplaUtilies.getNow().getTime().toString() + ": Widget OnUpdate called");
         RemoteViews rv = new RemoteViews(c.getPackageName(), R.layout.main);
 
-        rv.setOnClickPendingIntent(R.id.buttonReload, buildIntent(c, RaplaUtilies.ACTION_REFRESH));
+        rv.setOnClickPendingIntent(R.id.widgetLeftLayout, buildIntent(c, RaplaUtilies.ACTION_REFRESH));
         rv.setOnClickPendingIntent(R.id.textViewMain, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_LS_CLICK_1));
         rv.setOnClickPendingIntent(R.id.textViewSubText, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_LS_CLICK_2));
 
@@ -43,7 +45,7 @@ public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
     }
 
     public static void startUpdate(Context c) {
-        System.out.print(RaplaUtilies.getNow().toString() + ": Start Widget Update");
+        System.out.println(RaplaUtilies.getNow().getTime().toString() + ": Start Widget Update");
 
         RaplaConnector conn = new RaplaConnector(new RaplaConnectorResultHandler(), c);
 
@@ -62,7 +64,7 @@ public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
         rv.setTextViewText(R.id.textViewDate, side2);
         rv.setTextViewText(R.id.textViewTime, side3);
 
-        rv.setViewVisibility(R.id.buttonReload, reloadVisible ? View.VISIBLE : View.INVISIBLE);
+        rv.setViewVisibility(R.id.buttonReload, (canReload = reloadVisible) ? View.VISIBLE : View.INVISIBLE);
 
         pushWidgetUpdate(context, rv);
     }

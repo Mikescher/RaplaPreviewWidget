@@ -3,6 +3,7 @@ package org.semtex;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.view.View;
 import android.widget.RemoteViews;
 
 /**
@@ -26,10 +27,12 @@ public class RaplaPreviewWidgetIntentReciever extends BroadcastReceiver {
     private void updateWidgetRefreshListener(Context c) {
         RemoteViews rv = new RemoteViews(c.getPackageName(), R.layout.main);
 
-        RaplaPreviewWidgetProvider.startUpdate(c);
+        if (RaplaPreviewWidgetProvider.canReload) {
+            RaplaPreviewWidgetProvider.startUpdate(c);
+        }
 
         //REMEMBER TO ALWAYS REFRESH YOUR BUTTON CLICK LISTENERS!!!
-        rv.setOnClickPendingIntent(R.id.buttonReload, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_REFRESH));
+        rv.setOnClickPendingIntent(R.id.widgetLeftLayout, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_REFRESH));
         RaplaPreviewWidgetProvider.pushWidgetUpdate(c.getApplicationContext(), rv);
     }
 

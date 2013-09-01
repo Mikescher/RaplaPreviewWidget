@@ -36,12 +36,13 @@ public final class R {
         public static final int widget_preview_light=0x7f020016;
     }
     public static final class id {
-        public static final int buttonReload=0x7f070004;
-        public static final int textViewDate=0x7f070005;
+        public static final int buttonReload=0x7f070005;
+        public static final int textViewDate=0x7f070006;
         public static final int textViewMain=0x7f070001;
         public static final int textViewSubText=0x7f070002;
-        public static final int textViewTime=0x7f070006;
-        public static final int textViewWeekday=0x7f070003;
+        public static final int textViewTime=0x7f070007;
+        public static final int textViewWeekday=0x7f070004;
+        public static final int widgetLeftLayout=0x7f070003;
         public static final int widget_root=0x7f070000;
     }
     public static final class layout {

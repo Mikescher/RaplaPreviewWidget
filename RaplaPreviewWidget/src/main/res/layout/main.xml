@@ -39,19 +39,23 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:gravity="right">
+        android:gravity="right"
+        android:focusable="true"
+        android:id="@+id/widgetLeftLayout">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="14dp"
-            android:gravity="right">
+            android:gravity="right"
+            android:focusable="false">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="@string/textViewWeekday_standard"
                 android:id="@+id/textViewWeekday"
-                style="@style/RaVi_SideLabelTheme" />
+                style="@style/RaVi_SideLabelTheme"
+                android:focusable="false" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -61,7 +65,8 @@
                 android:paddingLeft="4dp"
                 android:contentDescription="@string/btn_refresh_description"
                 android:clickable="true"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:focusable="false" />
 
         </LinearLayout>
 
@@ -72,7 +77,8 @@
             android:id="@+id/textViewDate"
             android:layout_weight="1"
             style="@style/RaVi_SideLabelTheme"
-            android:paddingTop="1dp" />
+            android:paddingTop="1dp"
+            android:focusable="false" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +87,8 @@
             android:id="@+id/textViewTime"
             android:layout_weight="1"
             style="@style/RaVi_SideLabelTheme"
-            android:paddingTop="1dp" />
+            android:paddingTop="1dp"
+            android:focusable="false" />
 
     </LinearLayout>
 
