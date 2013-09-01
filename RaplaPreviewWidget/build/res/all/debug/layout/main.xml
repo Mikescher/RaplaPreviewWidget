@@ -41,14 +41,29 @@
         android:layout_weight="1"
         android:gravity="right">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:text="@string/textViewWeekday_standard"
-            android:id="@+id/textViewWeekday"
-            android:layout_weight="1"
-            android:textSize="10sp"
-            style="@style/RaVi_SideLabelTheme" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/textViewWeekday_standard"
+                android:id="@+id/textViewWeekday"
+                style="@style/RaVi_SideLabelTheme" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonReload"
+                android:src="@drawable/btn_refresh"
+                android:paddingLeft="4dp"
+                android:contentDescription="@string/btn_refresh_description"
+                android:clickable="true"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,8 +71,8 @@
             android:text="@string/textViewDate_standard"
             android:id="@+id/textViewDate"
             android:layout_weight="1"
-            android:textSize="10sp"
-            style="@style/RaVi_SideLabelTheme" />
+            style="@style/RaVi_SideLabelTheme"
+            android:paddingTop="1dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,8 +80,9 @@
             android:text="@string/textViewTime_standard"
             android:id="@+id/textViewTime"
             android:layout_weight="1"
-            android:textSize="10sp"
-            style="@style/RaVi_SideLabelTheme" />
+            style="@style/RaVi_SideLabelTheme"
+            android:paddingTop="1dp" />
+
     </LinearLayout>
 
 </LinearLayout><!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/layout/main.xml -->

@@ -5,4 +5,5 @@ package org.semtex;
  */
 public interface ResultListener {
     public void recieve(String html);
+    public void recieveFailed(String errormsg);
 }

@@ -2,13 +2,13 @@ package org.semtex;
 
 import android.os.AsyncTask;
 
+import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.HttpResponse;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
@@ -60,6 +60,10 @@ public class HTMLRequestTask extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        reciever.recieve(result);
+        if (result != null) {
+            reciever.recieve(result);
+        } else {
+            reciever.recieveFailed("");
+        }
     }
 }

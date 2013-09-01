@@ -3,11 +3,12 @@
 
     <!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/strings.xml -->
     <string name="app_name">RaplaPreviewWidget</string>
-    <string name="textViewDate_standard">04.08.2012</string>
-    <string name="textViewMain_standard">Mathematik II</string>
-    <string name="textViewSubtext_standard">F180.2 Hörsaal Technik/INF</string>
-    <string name="textViewTime_standard">08:40 - 09:12</string>
-    <string name="textViewWeekday_standard">Do (44 days)</string>
+    <string name="btn_refresh_description">Reload</string>
+    <string name="textViewDate_standard">[Date]</string>
+    <string name="textViewMain_standard">[Name]</string>
+    <string name="textViewSubtext_standard">[Info]</string>
+    <string name="textViewTime_standard">[Time]</string>
+    <string name="textViewWeekday_standard">[Day]</string>
     <!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/styles.xml -->
     <style name="AppBaseTheme" parent="android:Theme">
         <!--

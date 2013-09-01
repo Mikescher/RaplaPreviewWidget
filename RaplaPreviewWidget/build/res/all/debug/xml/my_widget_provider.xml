@@ -3,5 +3,6 @@
     android:minWidth="250dp"
     android:minHeight="40dp"
     android:initialLayout="@layout/main"
+    android:previewImage="@drawable/preview"
 /> 
 <!-- From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/xml/my_widget_provider.xml -->
