@@ -1,4 +1,4 @@
 RaplaPreviewWidget
 ==================
 
-A Widget to view Rapla o Android
+A Widget to view Rapla on Android
