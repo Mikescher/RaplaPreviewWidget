@@ -1,5 +1,6 @@
 package org.semtex;
 
+import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -11,25 +12,57 @@ import android.widget.ImageView;
 import android.widget.RemoteViews;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
 
-    public static RaplaEntry currentEntry = null;
+    private static PendingIntent alarmService = null;
+
+    private static RaplaEntry currentEntry = null;
     public static int currentSubTextMode = 0;
     public static boolean canReload = true;
 
     @Override
     public void onUpdate(Context c, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         System.out.println(RaplaUtilies.getNow().getTime().toString() + ": Widget OnUpdate called");
+
         RemoteViews rv = new RemoteViews(c.getPackageName(), R.layout.main);
 
         rv.setOnClickPendingIntent(R.id.widgetLeftLayout, buildIntent(c, RaplaUtilies.ACTION_REFRESH));
         rv.setOnClickPendingIntent(R.id.textViewMain, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_LS_CLICK_1));
         rv.setOnClickPendingIntent(R.id.textViewSubText, RaplaPreviewWidgetProvider.buildIntent(c, RaplaUtilies.ACTION_LS_CLICK_2));
 
+        initAlarmManager(c);
+
         pushWidgetUpdate(c, rv);
 
         startUpdate(c);
+    }
+
+    @Override
+    public void onDisabled(Context c)
+    {
+        getAlarmManager(c).cancel(alarmService);
+    }
+
+    private static AlarmManager getAlarmManager(Context c) {
+        return (AlarmManager) c.getSystemService(Context.ALARM_SERVICE);
+    }
+
+    public static void initAlarmManager(Context c) {
+        final AlarmManager m = getAlarmManager(c);
+
+        final Intent i = new Intent(c, AlarmManagerService.class);
+
+        if (alarmService == null)
+        {
+            alarmService = PendingIntent.getService(c, 0, i, PendingIntent.FLAG_CANCEL_CURRENT);
+        }
+    }
+
+    public static void startAlarmManager(Context c, Calendar cal) {
+        long time = cal.getTime().getTime();
+        getAlarmManager(c).set(AlarmManager.RTC, time, alarmService);
     }
 
     public static PendingIntent buildIntent(Context context, String action) {
@@ -102,5 +135,15 @@ public class RaplaPreviewWidgetProvider extends AppWidgetProvider {
     public static void switchSubtextDisplay(Context c, RemoteViews rv) {
         currentSubTextMode = (currentSubTextMode + 1) % 3;
         updateEntryDisplay(c, rv);
+    }
+
+    public static void setEntry(Context c, RaplaEntry e) {
+        currentEntry = e;
+
+        if (e != null) {
+            Calendar cal = (Calendar) e.getStartTime().clone();
+            cal.add(Calendar.MINUTE, RaplaConnector.ALARAMMANAGER_TIME_SKIP);
+            startAlarmManager(c, cal);
+        }
     }
 }

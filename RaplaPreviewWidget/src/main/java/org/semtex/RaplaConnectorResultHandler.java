@@ -12,7 +12,7 @@ public class RaplaConnectorResultHandler implements RaplaResultListener {
         RemoteViews rv = new RemoteViews(connector.getContext().getPackageName(), R.layout.main);
         Context c = connector.getContext();
 
-        RaplaPreviewWidgetProvider.currentEntry = entry;
+        RaplaPreviewWidgetProvider.setEntry(c, entry);
         RaplaPreviewWidgetProvider.updateEntryDisplay(c, rv);
     }
 
@@ -21,7 +21,7 @@ public class RaplaConnectorResultHandler implements RaplaResultListener {
         RemoteViews rv = new RemoteViews(connector.getContext().getPackageName(), R.layout.main);
         Context c = connector.getContext();
 
-        RaplaPreviewWidgetProvider.currentEntry = null;
+        RaplaPreviewWidgetProvider.setEntry(c, null);
         RaplaPreviewWidgetProvider.updateUI(c, rv, "<ERROR>", errormsg, "???", "???", "???", true);
     }
 }

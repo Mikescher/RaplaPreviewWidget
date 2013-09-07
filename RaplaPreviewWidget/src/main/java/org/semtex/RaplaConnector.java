@@ -1,6 +1,7 @@
 package org.semtex;
 
 import android.content.Context;
+import android.widget.RemoteViews;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -14,6 +15,7 @@ public class RaplaConnector implements ResultListener {
     private final static String URL_RAPLA = "https://rapla.dhbw-karlsruhe.de/rapla?page=calendar&user=vollmer&file=tinf12b5&day=%d&month=%d&year=%d";
 
     private final static int ENTRY_SEARCH_RANGE = 10; // show Course even if it started x minutes before
+    public final static int ALARAMMANAGER_TIME_SKIP = 11; // target AlarmManager x mins after entry start Time
 
     private final static int MAX_TRY_COUNT = 4;
     private final static int MAX_FORWARD_COUNT = 16;
@@ -59,6 +61,7 @@ public class RaplaConnector implements ResultListener {
             if (currentForwardCount > MAX_FORWARD_COUNT) {
                 listener.recieveFailed("Max seeking range, no Entrys found", this);
             } else {
+                RaplaPreviewWidgetProvider.updateUI(getContext(), new RemoteViews(getContext().getPackageName(), R.layout.main), "Updating ...", "Seeking +"+currentForwardCount, "", "", "", false);
                 System.out.println("SEEK NR " + currentForwardCount);
                 update();
             }

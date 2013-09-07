@@ -103,41 +103,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RaplaPreviewWidgetProvider.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RaplaPreviewWidgetProvider.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="75" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.35526314" vertical-offset="736" max-vertical-offset="1734">
+            <state line="79" column="27" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="2431">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/res/layout/main.xml">
+      <file leaf-file-name="AlarmManagerService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/AlarmManagerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="41" selection-start="1521" selection-end="1537" vertical-scroll-proportion="-9.68" vertical-offset="489" max-vertical-offset="1700">
-              <folding>
-                <element signature="e#729#760#0" expanded="true" />
-                <element signature="e#994#1028#0" expanded="true" />
-                <element signature="e#1882#1916#0" expanded="true" />
-                <element signature="e#2376#2409#0" expanded="true" />
-                <element signature="e#2701#2732#0" expanded="true" />
-                <element signature="e#3071#3102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RaplaPreviewWidgetIntentReciever.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetIntentReciever.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="12" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="935">
+            <state line="21" column="16" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="748">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaplaConnector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="56" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3434">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaplaConnectorResultHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnectorResultHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.2236842" vertical-offset="0" max-vertical-offset="608">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -215,22 +214,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/ResultListener.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/HTMLRequestTask.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidget.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaResultListener.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RegexHelper.java" />
-        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnectorResultHandler.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/HTMLParseException.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaEntry.java" />
-        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnector.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaUtilies.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/res/xml/my_widget_provider.xml" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetProvider.java" />
         <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetIntentReciever.java" />
+        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/AlarmManagerService.java" />
+        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetProvider.java" />
+        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnector.java" />
+        <option value="$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnectorResultHandler.java" />
       </list>
     </option>
   </component>
@@ -555,11 +554,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -679,8 +678,8 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="do_nothing" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
-      <option name="PREFERRED_AVD" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="default" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -762,22 +761,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.60042506" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32731137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3995749" sideWeight="0.6821192" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32624868" sideWeight="0.28200883" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.2869288" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32624868" sideWeight="0.7179912" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32624868" sideWeight="0.7179912" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.6705632" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837406" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -789,7 +788,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.60042506" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -810,22 +809,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/HTMLRequestTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="37" selection-start="2287" selection-end="2287" vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/ResultListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="137" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaResultListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="71" selection-start="273" selection-end="273" vertical-scroll-proportion="0.25247526" vertical-offset="0" max-vertical-offset="606">
@@ -880,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnectorResultHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="65" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
@@ -894,42 +870,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="517" selection-end="517" vertical-scroll-proportion="-0.15769945" vertical-offset="272" max-vertical-offset="3400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetIntentReciever.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="12" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="935">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="41" selection-start="1521" selection-end="1537" vertical-scroll-proportion="-9.68" vertical-offset="489" max-vertical-offset="1700">
-          <folding>
-            <element signature="e#729#760#0" expanded="true" />
-            <element signature="e#994#1028#0" expanded="true" />
-            <element signature="e#1882#1916#0" expanded="true" />
-            <element signature="e#2376#2409#0" expanded="true" />
-            <element signature="e#2701#2732#0" expanded="true" />
-            <element signature="e#3071#3102#0" expanded="true" />
-          </folding>
+        <state line="43" column="41" selection-start="1521" selection-end="1537" vertical-scroll-proportion="0.0" vertical-offset="489" max-vertical-offset="1700">
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/HTMLRequestTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="58" selection-start="1736" selection-end="1736" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaPreviewWidgetProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="75" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.35526314" vertical-offset="736" max-vertical-offset="1734">
+        <state line="79" column="27" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="2431">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/AlarmManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="748">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="56" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaplaPreviewWidget/src/main/java/org/semtex/RaplaConnectorResultHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.2236842" vertical-offset="0" max-vertical-offset="608">
           <folding />
         </state>
       </provider>
