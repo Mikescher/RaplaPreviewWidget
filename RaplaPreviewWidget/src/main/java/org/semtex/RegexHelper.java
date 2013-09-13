@@ -7,8 +7,8 @@ import java.util.regex.Pattern;
  */
 public class RegexHelper {
     private final static String STR_REGEX_TRIM = "[ ]*(\r|\n|\r\n|\n\r)[ ]*";
-    // <[ ]*(td|TD)[ ]*((valign|VALIGN)="top")?[ ]*(class|CLASS)="(week_block|Week_Block|WEEK_BLOCK)"[ ]*(rowspan|ROWSPAN)="[0-9]+"[ ]*((bgcolor|BGCOLOR)="#[a-fA-F0-9]+")?[ ]*>
-    private final static String STR_REGEX_BLOCKSTART = "<[ ]*(td|TD)[ ]*((valign|VALIGN)=\"top\")?[ ]*(class|CLASS)=\"(week_block|Week_Block|WEEK_BLOCK)\"[ ]*(rowspan|ROWSPAN)=\"[0-9]+\"[ ]*((bgcolor|BGCOLOR)=\"#[a-fA-F0-9]+\")?[ ]*>";
+    // <[ ]*(td|TD)[ ]*((valign|VALIGN)="top")?[ ]*(class|CLASS)="(week_block|Week_Block|WEEK_BLOCK)"[ ]*(rowspan|ROWSPAN)="[0-9]+"[ ]*((style|STYLE)="(background-color|BACKGROUND-COLOR):#[a-fA-F0-9]+")?[ ]*>
+    private final static String STR_REGEX_BLOCKSTART = "<[ ]*(td|TD)[ ]*((valign|VALIGN)=\"top\")?[ ]*(class|CLASS)=\"(week_block|Week_Block|WEEK_BLOCK)\"[ ]*(rowspan|ROWSPAN)=\"[0-9]+\"[ ]*((style|STYLE)=\"(background-color|BACKGROUND-COLOR):#[a-fA-F0-9]+\")?[ ]*>";
     private final static String STR_REGEX_TD_TAG = "(<(td|TD)|</(td|TD)[ ]*>)";
     private final static String STR_REGEX_CLOSING_TAG = "[ ]*</[A-Za-z]+[ ]*[>]?";
     // <(span|SPAN)[ ]+(class|CLASS)="(tooltip|TOOLTIP)"[^>]*>((.|\n)*?)</(span|SPAN)[ ]*>
