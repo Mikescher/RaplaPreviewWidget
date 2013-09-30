@@ -29,6 +29,8 @@ public class RaplaPreviewWidgetIntentReciever extends BroadcastReceiver {
 
         if (RaplaPreviewWidgetProvider.canReload) {
             RaplaPreviewWidgetProvider.startUpdate(c);
+        } else {
+            RaplaPreviewWidgetProvider.updateUI(c, rv, "Abort ...", "----", "----", "----", "----", true);
         }
 
         //REMEMBER TO ALWAYS REFRESH YOUR BUTTON CLICK LISTENERS!!!

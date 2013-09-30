@@ -41,16 +41,20 @@ public class RaplaConnector implements ResultListener {
     }
 
     public void recieve(String html) {
+        System.out.println(RaplaUtilies.getNow().getTime().toString() + ": HTML recieved");
+
         List<RaplaEntry> entries = null;
+        RaplaEntry nextEntry;
         try {
             entries = getEntries(html, (Calendar) currentDate.clone());
+
+            nextEntry = getFirstEntry(entries);
         } catch (HTMLParseException e) {
             e.printStackTrace();
-            listener.recieveFailed("Could not parse HTML", this);
+            listener.recieveFailed("C.n.p:" + e.getMessage(), this);
             return;
         }
 
-        RaplaEntry nextEntry = getFirstEntry(entries);
         if (nextEntry != null) {
             listener.recieve(nextEntry, this);
         } else {
@@ -100,6 +104,7 @@ public class RaplaConnector implements ResultListener {
         if (currentTryCount > MAX_TRY_COUNT) {
             listener.recieveFailed("Max reconnect Try's reached", this);
         } else {
+            RaplaPreviewWidgetProvider.updateUI(getContext(), new RemoteViews(getContext().getPackageName(), R.layout.main), "Updating ...", "Reconnecting +"+currentTryCount, "", "", "", false);
             System.out.println("TRY NR " + currentTryCount);
             update();
         }

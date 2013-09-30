@@ -2,6 +2,6 @@
 package org.semtex;
 
 public final class BuildConfig {
-    public final static boolean DEBUG = true;
+    public static final boolean DEBUG = Boolean.parseBoolean("true");
 
 }

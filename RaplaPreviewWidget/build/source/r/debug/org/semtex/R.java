@@ -49,7 +49,7 @@ public final class R {
         public static final int main=0x7f030000;
     }
     public static final class string {
-        /**  From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/strings.xml 
+        /**  From: file:/E:/Eigene%20Dateien/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/strings.xml 
          */
         public static final int app_name=0x7f050000;
         public static final int btn_refresh_description=0x7f050001;
@@ -60,7 +60,7 @@ public final class R {
         public static final int textViewWeekday_standard=0x7f050006;
     }
     public static final class style {
-        /**  From: file:/C:/Users/ZEUS/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/styles.xml 
+        /**  From: file:/E:/Eigene%20Dateien/Dropbox/Eigene%20EDV/Android/AndroidStudioProjects/RaplaPreviewWidgetProject/RaplaPreviewWidget/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to

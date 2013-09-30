@@ -32,6 +32,7 @@ public class HTMLRequestTask extends AsyncTask<String, String, String> {
         HttpParams httpParameters = new BasicHttpParams();
         HttpConnectionParams.setConnectionTimeout(httpParameters, 5000); // 5s max for connection
         HttpConnectionParams.setSoTimeout(httpParameters, 6000); // 6s max to get data
+
         HttpClient httpclient = new DefaultHttpClient();
         HttpResponse response;
         String responseString = null;
